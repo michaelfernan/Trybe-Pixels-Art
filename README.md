@@ -35,8 +35,8 @@ Você pode ~~e deve~~ ir além para deixar o projeto com a sua cara e impression
   <summary><strong>🗓 Data de Entrega</strong></summary><br />
 
 * Este projeto é individual;
-* São `X` dias de projeto;
-* Data para entrega do projeto: `dd/mm/yyyy - 14:00h`.
+* Serão `2` dias de projeto;
+* Data para entrega do projeto: `20/06/2023 23:59`.
 
 </details>
 
@@ -47,9 +47,9 @@ Você pode ~~e deve~~ ir além para deixar o projeto com a sua cara e impression
 
 1. Clone o repositório
 
-* Use o comando: `git clone git@github.com:tryber/sd-0x-project-pixels-art.git`
+* Use o comando: `git clone git@github.com:tryber/sd-034-project-pixels-art.git`
 * Entre na pasta do repositório que você acabou de clonar:
-  * `cd sd-0x-project-pixels-art`
+  * `cd sd-034-project-pixels-art`
 
 2. Instale as dependências
 
@@ -84,7 +84,7 @@ Você pode ~~e deve~~ ir além para deixar o projeto com a sua cara e impression
 
 6. Crie um novo `Pull Request` _(PR)_
 
-* Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-pixels-art/pulls)
+* Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-034-project-pixels-art/pulls)
 * Clique no botão verde _"New pull request"_
 * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
 * Coloque um título para a sua Pull Request
@@ -92,7 +92,7 @@ Você pode ~~e deve~~ ir além para deixar o projeto com a sua cara e impression
 * Clique no botão verde "Create pull request"
 * Adicione uma descrição para o _Pull Request_, e clique no botão verde _"Create pull request"_
 * **Não se preocupe em preencher mais nada por enquanto!**
-* Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-pixels-art/pulls) e confira que o seu _Pull Request_ está criado
+* Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-034-project-pixels-art/pulls) e confira que o seu _Pull Request_ está criado
 
 </details>
 
@@ -120,7 +120,7 @@ Para sinalizar que o seu projeto está pronto para o _"Code Review"_, faça o se
 * Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
   * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
   * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-0x`.
+  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-034`.
 
 Caso tenha alguma dúvida, veja este [video explicativo](https://vimeo.com/362189205).
 
@@ -255,7 +255,7 @@ do projeto</strong></summary>
 
 Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. **Leva menos de 3 minutos!**
 
-Link: [Formulário de avaliação do projeto](https://be-trybe.typeform.com/to/ZTeR4IbH)
+Link: [Formulário de avaliação do projeto](https://be-trybe.typeform.com/to/ZTeR4IbH#cohort_hidden=CH34&template=betrybe/sd-0x-project-pixels-art)
 
 </details>
 
