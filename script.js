@@ -68,7 +68,7 @@ function limparQuadro() {
 function gerarCoresAleatorias() {
   const colors = document.querySelectorAll('.color');
   const randomColors = generateRandomColors(4);
-  
+
   for (let i = 0; i < colors.length; i++) {
     colors[i].style.backgroundColor = randomColors[i];
   }
@@ -106,7 +106,6 @@ function savePixelBoard() {
   localStorage.setItem('pixelBoard', JSON.stringify(pixelData));
 }
 
-
 function restorePixelBoard() {
   const savedPixelData = localStorage.getItem('pixelBoard');
 
@@ -121,6 +120,5 @@ function restorePixelBoard() {
 }
 
 pixelBoard.addEventListener('click', savePixelBoard);
-
 
 document.addEventListener('DOMContentLoaded', restorePixelBoard);
