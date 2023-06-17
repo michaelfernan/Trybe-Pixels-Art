@@ -4,6 +4,7 @@ for (let i = 0; i < 25; i += 1) {
   const pixel = document.createElement('div');
   pixel.className = 'pixel';
   pixelBoard.appendChild(pixel);
+
 }
 
 function adicionandoColor() {
@@ -19,6 +20,7 @@ function adicionandoColor() {
     });
   }
 }
+preencherPixel()
 
 const first = document.getElementById('color1');
 first.style.backgroundColor = 'red';
@@ -33,3 +35,16 @@ first.addEventListener('click', adicionandoColor);
 firstLi.addEventListener('click', adicionandoColor);
 secondLi.addEventListener('click', adicionandoColor);
 thirdLi.addEventListener('click', adicionandoColor);
+
+function preencherPixel() {
+  const pixels = document.querySelectorAll('.pixel');
+  for (let pixel of pixels) {
+    pixel.addEventListener('click', (event) => {
+      const corSelecionada = document.querySelector('.color.selected');
+      if (corSelecionada) {
+        const cor = corSelecionada.style.backgroundColor;
+        event.target.style.backgroundColor = cor;
+      }
+    });
+  }
+}
