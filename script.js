@@ -48,3 +48,14 @@ function preencherPixel() {
     });
   }
 }
+
+
+const clearButton = document.getElementById('clear-board');
+clearButton.addEventListener('click', limparQuadro);
+
+function limparQuadro() {
+  const pixels = document.querySelectorAll('.pixel');
+  for (let pixel of pixels) {
+    pixel.style.backgroundColor = 'white';
+  }
+}
