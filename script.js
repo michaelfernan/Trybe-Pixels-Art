@@ -1,11 +1,11 @@
 const pixelBoard = document.getElementById('pixel-board');
-
-for (let i = 0; i < 25; i += 1) {
+// o codigo "for of " foi baseado, nos codigo realizado em aula , com a professoa Enza.
+for (const i of Array(25).keys()) {
   const pixel = document.createElement('div');
   pixel.className = 'pixel';
   pixelBoard.appendChild(pixel);
 }
-
+// codigo realizado com auxilio da desemvolvedora Michelle Fernandes
 const first = document.getElementById('color1');
 first.style.backgroundColor = 'red';
 const second = document.getElementById('color2');
@@ -34,7 +34,7 @@ preencherPixel();
 
 function adicionandoColor() {
   const colors = document.querySelectorAll('.color');
-  for (let color of colors) {
+  for (const color of colors) {
     color.addEventListener('click', (event) => {
       const selected = document.querySelector('.selected');
       if (selected) {
@@ -47,7 +47,7 @@ function adicionandoColor() {
 
 function preencherPixel() {
   const pixels = document.querySelectorAll('.pixel');
-  for (let pixel of pixels) {
+  for (const pixel of pixels) {
     pixel.addEventListener('click', (event) => {
       const corSelecionada = document.querySelector('.color.selected');
       if (corSelecionada) {
@@ -60,7 +60,7 @@ function preencherPixel() {
 
 function limparQuadro() {
   const pixels = document.querySelectorAll('.pixel');
-  for (let pixel of pixels) {
+  for (const pixel of pixels) {
     pixel.style.backgroundColor = 'white';
   }
 }
@@ -69,14 +69,16 @@ function gerarCoresAleatorias() {
   const colors = document.querySelectorAll('.color');
   const randomColors = generateRandomColors(4);
 
-  for (let i = 0; i < colors.length; i++) {
-    colors[i].style.backgroundColor = randomColors[i];
+  let index = 0;
+  for (const color of colors) {
+    color.style.backgroundColor = randomColors[index];
+    index++;
   }
 }
 
 function generateRandomColors(numColors) {
   const randomColors = [];
-  for (let i = 0; i < numColors; i++) {
+  for (const i of Array(numColors).keys()) {
     const color = getRandomColor();
     randomColors.push(color);
   }
@@ -86,18 +88,17 @@ function generateRandomColors(numColors) {
 function getRandomColor() {
   const letters = '0123456789ABCDEF';
   let color = '#';
-  for (let i = 0; i < 6; i++) {
+  for (const i of Array(6).keys()) {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
 }
 
-
 function savePixelBoard() {
   const pixels = document.querySelectorAll('.pixel');
   const pixelData = [];
 
-  for (let pixel of pixels) {
+  for (const pixel of pixels) {
     const color = pixel.style.backgroundColor;
     const position = Array.from(pixelBoard.children).indexOf(pixel);
     pixelData.push({ color, position });
@@ -112,7 +113,7 @@ function restorePixelBoard() {
   if (savedPixelData) {
     const pixelData = JSON.parse(savedPixelData);
 
-    for (let data of pixelData) {
+    for (const data of pixelData) {
       const pixel = pixelBoard.children[data.position];
       pixel.style.backgroundColor = data.color;
     }
